@@ -1,0 +1,17 @@
+  <form>
+                                        <div className="form-group">
+                                            <label htmlFor="textarea">Reason</label>
+                                            <textarea className="form-control " style={{resize: "none"}} id="reason" placeholder="Enter reason" name="description" onChange={this.formhandeler.bind(this)}/>
+                                        </div>
+                                        <div className="form-group">
+                                            <label htmlFor="text">No of days</label>
+                                            <input type="text" className="form-control" id="days" placeholder="Enter no of days" name="daysofleave" onChange={this.formhandeler.bind(this)}/>
+                                        </div>
+                                      
+                                        <DatePicker
+                                            selected={this.state.startDate}
+                                                  onChange={this.handleChange}
+                                                   />
+                                     <div style={{paddingTop:"20px"}}>   <button type="button" className="btn btn-outline-success" onClick={this.message} >send</button>
+                                     </div>
+                                    </form>
